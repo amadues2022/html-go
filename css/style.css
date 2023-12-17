@@ -6,9 +6,10 @@
 }
 @media screen and (min-width: 1025px) {
   body {
-    background: url("../images/bg.jpg");
+    background-image: url("../images/bg.jpg");
     background-attachment: fixed;
     background-blend-mode: hard-light;
+    background-size: contain
   }
 
   .container {
@@ -85,5 +86,9 @@
 
   .countdouwn #second:before {
     content: "Seconds";
+  }
+  
+  #Year {
+    font-size: 0.5em; /* 调整字体大小为 24 像素 */
   }
 }

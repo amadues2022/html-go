@@ -14,8 +14,8 @@
 <body>
   <div class="container">
     <h2>
-      <span>Countdown to new year </span>
-      <div id="Year">NA</div>
+      <span>嚯嚯，居然找到了这里，是自己发现的嘛 :) </span>
+      <div id="Year">神秘倒计时</div>
     </h2>
     <div class="countdouwn">
       <div id="day">NA</div>
@@ -27,8 +27,9 @@
   <script>
     // 自动为下一年
     function newYear() {
-      var Y = new Date().getFullYear() + 1
-      var newDay = Y + '/1/1 00:00:00'
+      // var Y = new Date().getFullYear()+1
+      // var newDay = Y + '/1/1 00:00:00'
+      var newDay = new Date("2024-01-10T20:00:00");
       var countDate = new Date(newDay);
       var now = new Date().getTime()
       gap = countDate - now;
@@ -50,7 +51,7 @@
       // func end
 
       // 显示的年
-      document.getElementById('Year').innerText = Y
+      document.getElementById('Year').innerText = "神秘倒计时"
 
       // 倒计时
       document.getElementById('day').innerText = d
